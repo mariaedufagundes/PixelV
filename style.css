@@ -5,13 +5,13 @@
 }
 
 @font-face {
-    font-family: "recursive";
+    font-family: "Recursive";
     src: url(./fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
 }
 
 
 :root {
-    --branco: #ffffff;
+    --branco: #FFFFFF;
     --preto: #000000;
     --verde-pixelV: #00C621;
     --roxo-pixelV: #4700CF;
@@ -23,7 +23,6 @@
     width: 80vw;
     max-width: 1400px;
     margin: 0 auto;
-
 }
 
 body {
@@ -51,12 +50,10 @@ body {
     border-bottom: solid 3px var(--verde-pixelV);
 }
 
-/* ---------------------------Header---------------------------- */
-
-
+/* ----------------------Header---------------------- */
 
 .banner {
-    background-image: url("./img/Banner.png");
+    background-image: url(./img/Banner.png);
     height: 120vh;
     background-repeat: no-repeat;
     background-position: 0 -10px;
@@ -64,11 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
 }
-
-
 
 header {
     height: 165px;
@@ -80,8 +73,6 @@ header .container-grid {
     align-items: center;
     justify-content: space-between;
 }
-
-
 
 header img {
     width: 234px;
@@ -96,14 +87,13 @@ header img {
 
 .menu a {
     font-size: 20px;
-    color: var(--branco);
+    color: azure;
     font-family: "Recursive", sans-linear;
 
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
 
     transition: text-decoration 500ms ease;
-
 }
 
 .menu a:hover {
@@ -123,7 +113,7 @@ header img {
 
 .conteudo-banner p {
     font-size: 26px;
-    font-family: "Recursive", sans-linear;
+    font-family: "Recursive";
     color: var(--branco);
     width: 350px;
     margin-bottom: 100px;
@@ -140,9 +130,9 @@ header img {
 }
 
 
+/* -------------SOBRE--------------- */
 
-/* ------------------------------------------SOBRE--------------------------------- */
-#Sobre {
+#sobre {
     display: flex;
     align-items: center;
     gap: 80px;
@@ -150,34 +140,117 @@ header img {
     margin-bottom: 120px;
 }
 
-#Sobre img {
+
+#sobre img {
     max-width: 460px;
     width: 40%;
     border-radius: 40px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-#Sobre h2 {
-
+#sobre h2 {
     margin-right: 5px;
 }
 
-#Sobre p {
+#sobre p {
     font-family: "Recursive", sans-linear;
     font-size: 20px;
     text-align: justify;
     margin-top: 30px;
+
 }
 
-/* -----------parallax----------- */
+/* ---------------parallax-------------- */
 
-#parallax{
+#parallax {
+
     height: 250px;
-    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./img/parallax.svg);
+    background: linear-gradient(rgb(0, 0, 0, 0.26)), url(./img/parallax.svg);
 
     margin-bottom: 120px;
 
     background-attachment: fixed;
 
     background-size: 30%;
+}
+
+/* ---------------serviços--------------- */
+
+
+#servico {
+    margin-bottom: 120px;
+}
+
+#servico .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#servico h2 {
+    margin-left: 5px;
+}
+
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.linha-roxa {
+    height: 250px;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1)100%);
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 125px);
+}
+
+#servico .card {
+    width: 300px;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#servico .card h3{
+    font-size: 24px;
+    margin: 5px 0 30px;
+    color: var(--roxo-pixelV);
+    font-family: "Recursive", sans-linear-bold;
+    text-align: center;
+}
+
+#servico .card p {
+    font-family: "Recursive", sans-linear;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#servico .card svg {
+    color: var(--roxo-pixelV);
+    height: 75px;
+}
+
+#servico .card:hover {
+    border: solid 3px var(--verde-pixelV);
+}
+
+#servico .card:hover svg {
+    fill: var(--verde-pixelV);
+}
+
+#servico .card:hover h3 {
+    color: var(--verde-pixelV);
 }
