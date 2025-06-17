@@ -132,6 +132,7 @@ header img {
 
 /* -------------SOBRE--------------- */
 
+
 #sobre {
     display: flex;
     align-items: center;
@@ -157,7 +158,6 @@ header img {
     font-size: 20px;
     text-align: justify;
     margin-top: 30px;
-
 }
 
 /* ---------------parallax-------------- */
